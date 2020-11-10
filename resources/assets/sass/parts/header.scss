@@ -9,10 +9,11 @@ header {
   .header-nav {
     font-weight: 700;
     font-size: 24px;
+    letter-spacing: 0.005em;
     ul {
       li {
         a {
-          margin-right: 16px;
+          margin-right: 32px;
         }
       }
     }

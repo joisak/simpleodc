@@ -19,7 +19,7 @@
             <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
                 <div class="lg:w-0 lg:flex-1">
                     <a href="/" class="flex">
-                        <img src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/simpledoc_blue_logo_inc-xspace.png" class="logo" alt="logo" />
+                        <img src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/simpledoc_.svg" class="logo" alt="logo" />
                     </a>
                 </div>
                 <div class="header-nav">

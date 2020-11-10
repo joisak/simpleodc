@@ -1,0 +1,13 @@
+footer {
+    background-color: #353535;
+    width: 100%;
+    .footer-content {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
