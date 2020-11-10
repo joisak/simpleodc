@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ------------------------------------------------------------------------
  * Theme's CSS Assets
@@ -8,7 +9,7 @@
  * shiped with various third-parity plugins.
  */
 
-if ( ! function_exists( 'tonik_register_styles' ) ) {
+if (!function_exists('tonik_register_styles')) {
 	/**
 	 * Registers theme's CSS styles.
 	 *
@@ -17,8 +18,9 @@ if ( ! function_exists( 'tonik_register_styles' ) ) {
 	 *
 	 * @return void
 	 */
-	function tonik_register_styles() {
-		wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/public/css/app.css' );
+	function tonik_register_styles()
+	{
+		wp_enqueue_style('theme-style', get_template_directory_uri() . '/public/css/app.css');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'tonik_register_styles' );
+add_action('wp_enqueue_scripts', 'tonik_register_styles');

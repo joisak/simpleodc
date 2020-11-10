@@ -1,0 +1,20 @@
+header {
+  background: transparent;
+  .logo {
+    width: 170px;
+  }
+  .header-nav, ul {
+    display: flex;
+  }
+  .header-nav {
+    font-weight: 700;
+    font-size: 24px;
+    ul {
+      li {
+        a {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}

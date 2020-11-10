@@ -17,7 +17,6 @@ if (!process.env.NODE_ENV) {
 |--------------------------------------------------------------------------
 */
 gulp.task('sass:clean', require('./tasks/sass/clean'))
-gulp.task('sass:lint', require('./tasks/sass/lint'))
 gulp.task('sass:build', require('./tasks/sass/build'))
 
 /*
@@ -56,7 +55,7 @@ gulp.task('javascript:build', ['javascript:clean'], require('./tasks/javascript/
 */
 gulp.task('font', ['font:clean', 'font:build'])
 gulp.task('image', ['image:clean', 'image:build'])
-gulp.task('sass', ['sass:clean', 'sass:lint', 'sass:build'])
+gulp.task('sass', ['sass:clean', 'sass:build'])
 gulp.task('javascript', ['javascript:clean', 'javascript:lint', 'javascript:build'])
 
 /*
