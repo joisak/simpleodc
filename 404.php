@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template that handle 404 requests on server
  *
@@ -11,11 +12,11 @@
 <main>
 	<section>
 		<article>
-			<h1><?php echo esc_html( 'Page not found', 'tonik' ); ?></h1>
+			<h1><?php echo esc_html('Page not found', 'tonik'); ?></h1>
 
 			<h2>
-				<a href="<?php echo esc_attr( home_url() ); ?>">
-					<?php echo esc_html( 'Homepage', 'tonik' ); ?>
+				<a href="<?php echo esc_attr(home_url()); ?>">
+					<?php echo esc_html('Homepage', 'Simpledoc'); ?>
 				</a>
 			</h2>
 		</article>

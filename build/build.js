@@ -41,7 +41,7 @@ gulp.task('image:build', require('./tasks/image/build'))
 |--------------------------------------------------------------------------
 */
 gulp.task('javascript:clean', require('./tasks/javascript/clean'))
-gulp.task('javascript:lint', require('./tasks/javascript/lint'))
+
 gulp.task('javascript:build', ['javascript:clean'], require('./tasks/javascript/build'))
 
 /*
@@ -56,7 +56,7 @@ gulp.task('javascript:build', ['javascript:clean'], require('./tasks/javascript/
 gulp.task('font', ['font:clean', 'font:build'])
 gulp.task('image', ['image:clean', 'image:build'])
 gulp.task('sass', ['sass:clean', 'sass:build'])
-gulp.task('javascript', ['javascript:clean', 'javascript:lint', 'javascript:build'])
+gulp.task('javascript', ['javascript:clean',  'javascript:build'])
 
 /*
 |--------------------------------------------------------------------------

@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Template Name: Sample Template
+ * Template Name: Basic Template
  *
  * This is custom template, that you can select from template option when adding new page/post/custom-post.
  * To modify template, simply rename this file and change Template Name below
@@ -11,10 +12,12 @@
 
 <?php get_header(); ?>
 
-<main>
-	<h1><?php the_title(); ?></h1>
+<main class="full-width">
+	<div class="main-content container mx-auto px-4 sm:px-6">
+		<h1><?php the_title(); ?></h1>
 
-	<p>This is a sample custom-template content. To edit this text, please modify 'template-sample.php' file</p>
+		<p>Basic Template</p>
+	</div>
 </main>
 
 <?php get_footer(); ?>
