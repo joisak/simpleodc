@@ -1,5 +1,7 @@
 .start-page {
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     @include md {
         height: calc(100vh - 272px);
     }
@@ -9,6 +11,16 @@
             font-weight: 700;
             padding-bottom: 1.5rem;
         }
-
+        .text {
+            margin-bottom: rem(32);
+        }
+        img {
+            margin-top: 16px;
+            width: 60%;
+            @include md {
+                margin-top: auto;
+                width: auto;
+            }
+        }
     }
 }

@@ -1,0 +1,18 @@
+@import './mixins';
+
+.button {
+    padding: rem(16px) rem(40px);
+    border: rem(1px) solid #ff441d;
+    border-radius: 6px;
+    background-color: #ff441d;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    word-spacing: rem(3px);
+    letter-spacing: rem(2px);
+    transition: 0.2s ease all;
+    &:hover {
+        color: white;
+        background-color: #e24121;
+    }
+}
