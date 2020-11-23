@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Basic Template
+ * Template Name: Start page
  *
  * This is custom template, that you can select from template option when adding new page/post/custom-post.
  * To modify template, simply rename this file and change Template Name below
@@ -12,12 +12,13 @@
 
 <? 
 	$url = $_SERVER['REQUEST_URI'];
+	$isUserLoggedIn = is_user_logged_in();
 ?>
 
 <?php get_header(); ?>
 
 <main class="full-width">
-	<div class="main-content container mx-auto px-4 sm:px-6">
+	<div class="<?php if($isUserLoggedIn){echo 'user-is-logged-in';} ?> main-content container mx-auto px-4 sm:px-6">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<? if($url === '/')  : ?>
 				<?php get_template_part( 'resources/templates/content/start', 'page' ); ?>		

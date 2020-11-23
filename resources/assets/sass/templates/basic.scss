@@ -1,3 +1,6 @@
 .main-content {
-    margin-top: 85px;
+    margin-top: rem(85px);
+    &.user-is-logged-in {
+        margin-top: rem(51px);
+    }
 }
