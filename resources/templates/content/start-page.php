@@ -18,8 +18,8 @@ $call_to_action_url = get_field('click_to_action_url');
                     <a href="<?= $call_to_action_url ?>"><?= $click_to_action_button_text ?></a>
                 <?php endif ?>
             </div>
-            <div class="col-md-6 d-flex justify-content-center">
-                <div class="col-md-6 ">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="col-xs-3 col-md-6 ">
                     <?php if ($feat_image) : ?>
                         <img class="img-fluid" src="<?= $feat_image ?>" alt="Simpledoc logo" />
                     <?php endif ?>

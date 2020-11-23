@@ -1,5 +1,8 @@
 .start-page {
-    height: calc(100vh - 272px);
+    height: 100vh;
+    @include md {
+        height: calc(100vh - 272px);
+    }
     .hero {
         h1 {
             line-height: 4.5rem;
