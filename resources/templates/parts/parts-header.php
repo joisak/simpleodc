@@ -5,6 +5,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
+
+$isUserLoggedIn = is_user_logged_in();
 ?>
 
 <header>
@@ -14,7 +16,9 @@
   Read the documentation to get started: https://tailwindui.com/documentation
 -->
     <!-- This example requires Tailwind CSS v1.4.0+ -->
-    <div class="container">
+    <div class="<?php if ($isUserLoggedIn) {
+                    echo 'user-is-logged-in';
+                } ?>   container">
         <div class="header">
 
             <div class="logo">
