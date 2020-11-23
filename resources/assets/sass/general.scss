@@ -1,8 +1,12 @@
+html {
+    //wordpress adds height 100% in html tag
+    height: auto !important
+}
+
 body {
     background-color: #353535;
 }
 main {
     background-color: white;
-    min-height: calc(100vh - 144px);
-    
+    //min-height: calc(100vh - 144px);
 }

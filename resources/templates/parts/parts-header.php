@@ -29,6 +29,7 @@ $isUserLoggedIn = is_user_logged_in();
             <div class="header-nav">
                 <?php echo esc_html(wp_nav_menu()); ?>
                 <a href=""> Logga in </a>
+                <?php echo do_shortcode('[google-translator]'); ?>
             </div>
             <div id="header-menu-icon">
                 <div id="nav-icon3">
