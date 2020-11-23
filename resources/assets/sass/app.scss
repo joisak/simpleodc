@@ -1,6 +1,7 @@
 @import "./general.scss";
 // helpers
-// ==========================================
+@import "./helpers/breakpoints";
+@import "./helpers/mixins";
 @import "helpers/core";
 
 // sample
@@ -10,3 +11,6 @@
 
 //templates
 @import './templates/basic';
+@import './templates/start-page.scss'
+
+

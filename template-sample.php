@@ -10,14 +10,22 @@
  */
 ?>
 
+<? 
+	$url = $_SERVER['REQUEST_URI'];
+?>
+
 <?php get_header(); ?>
 
 <main class="full-width">
 	<div class="main-content container mx-auto px-4 sm:px-6">
-		<h1><?php the_title(); ?></h1>
-
-		<p>Basic Template</p>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<? if($url === '/')  : ?>
+				<?php get_template_part( 'resources/templates/content/start', 'page' ); ?>		
+			<? endif ?>
+		<? endwhile; 
+		else : ?>
+			<p>Sorry, no posts matched your criteria.</p>
+		<?php endif; ?>
 	</div>
 </main>
-
 <?php get_footer(); ?>
