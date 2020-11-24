@@ -1,4 +1,5 @@
 @import './mixins';
+@import './breakpoints';
 
 .button {
     padding: rem(16px) rem(40px);
@@ -11,6 +12,12 @@
     word-spacing: rem(3px);
     letter-spacing: rem(2px);
     transition: 0.2s ease all;
+    width: 100%;
+    display: block;
+    text-align: center;
+    @include md {
+        display: inline;
+    }
     &:hover {
         color: white;
         background-color: #e24121;

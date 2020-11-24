@@ -5,11 +5,13 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  
   .user-is-logged-in {
     margin-top: rem(35px);
   }
   
   .header {
+    height: rem(80);
     display: flex;
     justify-content: space-between;
     align-items: center;

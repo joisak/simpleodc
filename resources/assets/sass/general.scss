@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
 html {
     //wordpress adds height 100% in html tag
     height: auto !important
@@ -10,3 +12,12 @@ main {
     background-color: white;
     //min-height: calc(100vh - 144px);
 }
+
+//Typography
+h1,h2,h3,h4 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+html h2,h3 {
+    font-weight: 700;
+}
+

@@ -14,8 +14,8 @@ $information = get_field('information');
             } ?>  start-page align-items-center  flex-sm-wrap-reverse">
             <div class="hero-container" style="background-image:url('<?= $background_image ?>')"> 
             <div class="container">
-            <div class="hero row d-flex align-items-center">
-            <div class="col-md-6">
+            <div class="hero row d-flex align-items-md-center">
+            <div class="col-md-8 col-lg-6">
                 <div class="text">
                     <?php if (the_content()) : ?>
 
@@ -29,8 +29,8 @@ $information = get_field('information');
                     </div>
                 <?php endif ?>
             </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center order-first order-md-last">
-                <div class="col-xs-3 col-md-8 text-center">
+            <div class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center order-first order-md-last">
+                <div class="col-md-12 col-lg-8 text-center">
                     <?php if ($feat_image) : ?>
                         <img class="img-fluid" src="<?= $feat_image ?>" alt="Simpledoc logo" />
                     <?php endif ?>
@@ -47,7 +47,7 @@ $information = get_field('information');
            
                 <?php $index = 0 ?>
                 <?php foreach($information as $case) : ?>
-                    <div class="row d-flex align-items-center">
+                    <div class="row d-flex align-items-center py-5">
                         <div class="<?php if($index % 2 !== 0) { echo 'order-md-last'; }  ?> col-md-6">
                             <h2><?= $case['header']?></h2>
                             <div class="information-text">
