@@ -8,17 +8,18 @@
 ?>
 
 <footer class="footer">
-	<div class="footer-content container mx-auto md:px-4 px-6 py-6 flex-col text-center md:text-left md:flex-row">
-		<div class="">
-			<h5>Simpledoc</h5>
-			<p>Kungsportsplatsen 1</p>
-			<p>411 10 Göteborg Sverige</p>
-			<p><a href="mailto:info@simpledoc.com">info@simpledoc.com </a></p>
-		</div>
-		<div class="py-4 md:py-0"><?= date("Y"); ?></div>
-		<div class="social-media-links">
-			<a href="">linkedin</a>
+	<div class="container">
+		<div class="row d-flex align-items-center py-4">
+			<div class="col-12 text-center text-md-left col-md-4 address">
+				<h5>Simpledoc</h5>
+				<p>Kungsportsplatsen 1</p>
+				<p>411 10 Göteborg Sverige</p>
+				<p><a href="mailto:info@simpledoc.com">info@simpledoc.com </a></p>
+			</div>
+			<div class="col-12 col-md-4 order-3 order-md-2 text-center"><?= date("Y"); ?></div>
+			<div class="col-12 col-md-4 py-4 py-md-auto text-center order-2 order-md-3 text-md-right">
+				<a href="">linkedin</a>
+			</div>
 		</div>
 	</div>
-
 </footer>

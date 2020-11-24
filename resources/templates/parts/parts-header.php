@@ -16,20 +16,21 @@ $isUserLoggedIn = is_user_logged_in();
   Read the documentation to get started: https://tailwindui.com/documentation
 -->
     <!-- This example requires Tailwind CSS v1.4.0+ -->
-    <div class="<?php if ($isUserLoggedIn) {
-                    echo 'user-is-logged-in';
-                } ?>   container">
-        <div class="header">
+    <div class="container">
+        <div class="<?php if ($isUserLoggedIn) {
+                        echo 'user-is-logged-in';
+                    } ?> header">
 
             <div class="logo">
                 <a href="/" class="img-fluid">
                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/simpledoc_.svg" class="logo" alt="logo" />
                 </a>
             </div>
+
             <div class="header-nav">
+                <?php echo do_shortcode('[google-translator]'); ?>
                 <?php echo esc_html(wp_nav_menu()); ?>
                 <a href=""> Logga in </a>
-                <?php echo do_shortcode('[google-translator]'); ?>
             </div>
             <div id="header-menu-icon">
                 <div id="nav-icon3">

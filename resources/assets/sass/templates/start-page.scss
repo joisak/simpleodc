@@ -1,18 +1,35 @@
 .start-page {
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    @include md {
-        height: calc(100vh - 272px);
-    }
+
     .hero {
+        @include md {
+            &.user-is-logged-in {
+                height: calc(100vh - 193px);
+            }
+            height: calc(100vh - 162px);
+            
+        }
         h1 {
             line-height: 4.5rem;
             font-weight: 700;
             padding-bottom: 1.5rem;
+            font-size: rem(60);
+            line-height: rem(60);
+            padding-bottom: 0;
+            margin-bottom: 0;
+            span {
+                color: rgb(0, 180, 228);
+            }
+        }
+        p {
+            margin-top: rem(20);
+            font-size: rem(24);
+            font-weight: 500;
+            //color:rgb(107, 114, 128);
         }
         .text {
-            margin-bottom: rem(32);
+            margin-bottom: rem(40);
         }
         img {
             margin-top: 16px;
@@ -22,5 +39,8 @@
                 width: auto;
             }
         }
+    }
+    .information {
+        
     }
 }

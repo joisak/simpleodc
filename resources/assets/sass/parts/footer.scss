@@ -1,10 +1,10 @@
 footer {
     background-color: #353535;
     width: 100%;
-    .footer-content {
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    color: white;
+    .address {
+        p {
+            margin-bottom: 4px;
+        }
     }
 }
