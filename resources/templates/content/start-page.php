@@ -44,10 +44,11 @@ $information = get_field('information');
     <div class="container">
 
         <div class="information">
-           
+                <?php if($information) : ?>
                 <?php $index = 0 ?>
                 <?php foreach($information as $case) : ?>
                     <div class="row d-flex align-items-center py-5">
+                        
                         <div class="<?php if($index % 2 !== 0) { echo 'order-md-last'; }  ?> col-md-6">
                             <h2><?= $case['header']?></h2>
                             <div class="information-text">
@@ -60,6 +61,7 @@ $information = get_field('information');
                         <?php $index++ ?>
                     </div>
                 <? endforeach ?>
+                <? endif ?>
         </div>
     </div>
 </div>

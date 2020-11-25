@@ -14,10 +14,14 @@ main {
 }
 
 //Typography
-.container {
+.container, .container-fluid {
     h1, h2, h3 {
         font-weight: 700;
         font-family: 'Noto Sans JP', sans-serif;
+        color: #353535;
+    }
+    p {
+        color: #353535;
     }
 }
 

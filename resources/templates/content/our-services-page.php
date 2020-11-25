@@ -1,6 +1,9 @@
 <?php
     $isUserLoggedIn = is_user_logged_in();
     $our_services = get_field('our_services');
+    $middle_segment = get_field('middle_segment');
+    $our_products_presentation_text = get_field('presentation_text');
+    $our_products = get_field('our_products');
 ?>
 
 
@@ -42,6 +45,37 @@
                         </div>
                     <? endforeach ?>
                 <? endif ?>
+        </div>
+    </div>
+    <div class="container-fluid middle-segment">
+    <div class="row">
+            <div class="col-12 col-md-4 offset-md-4 text-center">
+                <?php if($middle_segment) : ?>
+                    <?php echo $middle_segment ?>
+                <?php endif ?>
+            </div>
+        </div>
+    </div>
+    <div class="container our-products">
+        <div class="row pb-5">
+            <div class="col-12 col-md-6 offset-md-3 text-center">
+                <?php if($middle_segment) : ?>
+                    <?php echo $our_products_presentation_text ?>
+                <?php endif ?>
+            </div>
+        </div>
+        <div class="row our-products-information">
+            <? if($our_products) :?>
+                <?php foreach($our_products as $products) : ?>
+                    <div class="col-md-6 d-flex pb-5">
+                        <img class="img-fluid" src="<?= $products['image']['url']?>" alt="Simpledoc product">
+                        <div class="pl-3">
+                            <h4><?= $products['header'] ?></h4>
+                            <p><?= $products['text'] ?></p>
+                        </div>
+                    </div>
+                <?php endforeach ?>
+            <? endif ?>
         </div>
     </div>
 </div>
