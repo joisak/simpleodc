@@ -18,7 +18,7 @@
 <?php get_header(); ?>
 
 <main class="full-width">
-	<div class="<?php if($isUserLoggedIn){echo 'user-is-logged-in'; } ?> main-content">
+	<div class="<?php if($isUserLoggedIn){echo 'user-is-logged-in'; } ?> main-content-position">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php get_template_part( 'resources/templates/content/our-services', 'page' ); ?>		
 		<? endwhile; 

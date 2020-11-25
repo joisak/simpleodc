@@ -47,7 +47,7 @@ $information = get_field('information');
                 <?php if($information) : ?>
                 <?php $index = 0 ?>
                 <?php foreach($information as $case) : ?>
-                    <div class="row d-flex align-items-center py-5">
+                    <div class="row d-flex align-items-center py-3 py-md-5">
                         
                         <div class="<?php if($index % 2 !== 0) { echo 'order-md-last'; }  ?> col-md-6">
                             <h2><?= $case['header']?></h2>
@@ -56,7 +56,9 @@ $information = get_field('information');
                             </div>
                         </div>
                         <div class="<?php if($index % 2 !== 0) { echo 'order-md-first'; } ?> col-md-6">
-                            <img class="img-fluid" src="<?= $case['image']['url'] ?>">
+                            <div class="col-md-8 offset-md-2">
+                                <img class="img-fluid pb-3" src="<?= $case['image']['url'] ?>">
+                            </div>
                         </div>
                         <?php $index++ ?>
                     </div>
