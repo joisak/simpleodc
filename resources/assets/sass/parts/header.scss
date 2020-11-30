@@ -48,13 +48,16 @@ header {
   
   .header-nav {
     font-weight: 700;
-    font-size: rem(24px);
+    font-size: rem(16);
     letter-spacing: 0.005em;
     display: none;
     padding: 1.5rem 0;
     position: relative;
     @include md {
       display: flex;
+    }
+    @include lg {
+      font-size: rem(24px);
     }
     a {
       color: #353535;
