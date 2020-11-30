@@ -1,0 +1,24 @@
+html #demo-form {
+    input {
+     font-size: rem(16);
+    
+    }
+}
+
+html input {
+    padding: rem(12) rem(12) !important;
+    height: auto !important;
+}
+
+input, textarea{
+    border: rem(2) solid #00b4e4 !important;
+}
+
+.frm_primary_label {
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    padding-bottom: rem(8) !important;
+}
+.full-width {
+    width: 100%;
+}

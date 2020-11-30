@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ------------------------------------------------------------------------
  * Theme's Includes
@@ -15,3 +16,10 @@ require_once 'src/navs.php';
 require_once 'src/supports.php';
 require_once 'src/post-types.php';
 require_once 'src/thumbnails.php';
+
+
+function load_css()
+{
+    wp_enqueue_style('homepage-css', get_stylesheet_directory_uri() . '/public/css/app.css', array(), 0.256, 'all');
+}
+add_action('wp_print_styles', 'load_css', 99);

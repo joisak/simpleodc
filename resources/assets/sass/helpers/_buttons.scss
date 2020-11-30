@@ -2,24 +2,25 @@
 @import './breakpoints';
 
 .button {
-    padding: rem(16px) rem(40px);
-    border: rem(1px) solid #ff441d;
+    padding: rem(16px) rem(40px) !important;
+    border: rem(1px) solid #ff441d !important;
     border-radius: 6px;
-    background-color: #ff441d;
+    background-color: #ff441d !important;
     color: white;
-    font-weight: 600;
+    font-weight: 600 !important;
     text-decoration: none;
     word-spacing: rem(3px);
     letter-spacing: rem(2px);
     transition: 0.2s ease all;
-    width: 100%;
+    width: 100% !important;
     display: block;
     text-align: center;
     @include md {
-        display: inline;
+        display: inline !important;
+        width: auto !important;
     }
     &:hover {
-        color: white;
-        background-color: #e24121;
+        color: white !important;
+        background-color: #e24121 !important;
     }
 }
