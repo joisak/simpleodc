@@ -1,0 +1,2 @@
+# simpleodc
+wordpress-site
