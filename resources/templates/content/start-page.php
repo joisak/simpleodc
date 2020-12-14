@@ -1,6 +1,7 @@
 <?php
 $isUserLoggedIn = is_user_logged_in();
 $url = $_SERVER['REQUEST_URI'];
+$page = basename($url);
 $background_image = get_field('background_image');
 $click_to_action_button_text = get_field('call_to_action_button');
 $feat_image = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
@@ -40,7 +41,7 @@ $information = get_field('information');
             </div>
     <div class="container">
         <div id="demo-form">
-            <?php if($url === '/boka-demo/') : ?> 
+            <?php if($page === 'boka-demo') : ?> 
                 <?php echo do_shortcode("[formidable id=1 title=true description=true]"); ?>
             <?php endif ?>
         </div>

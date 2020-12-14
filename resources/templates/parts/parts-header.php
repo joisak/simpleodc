@@ -22,7 +22,7 @@ $isUserLoggedIn = is_user_logged_in();
                     } ?> header">
 
             <div class="logo">
-                <a href="/" class="img-fluid">
+                <a href="<?= home_url() ?>" class="img-fluid">
                     <img class="white" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/simpledoc_grey_logo_inc-xspace.png" class="logo" alt="logo" />
                     <img class="dark" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/simpledoc_blue_logo_inc-xspace.png" class="logo" alt="logo" />
                 </a>

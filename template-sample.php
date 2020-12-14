@@ -12,6 +12,10 @@
 
 <? 
 	$url = $_SERVER['REQUEST_URI'];
+	
+    $link = $_SERVER['REQUEST_URI'];
+    $link_array = explode('/',$link);
+    $page = basename($url);
 	$isUserLoggedIn = is_user_logged_in();
 ?>
 
@@ -20,7 +24,7 @@
 <main class="full-width">
 	<div id="main-content" class="<?php if($isUserLoggedIn){echo 'user-is-logged-in'; } ?>">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<? if($url === '/' || $url === '/boka-demo/')  : ?>
+			<? if(site_url()|| $page === 'boka-demo')  : ?>
 				<?php get_template_part( 'resources/templates/content/start', 'page' ); ?>		
 			<? endif ?>
 		<? endwhile; 
