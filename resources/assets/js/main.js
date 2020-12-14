@@ -1,4 +1,4 @@
-console.log('File `app.js` loaded')
+console.log('File `app.js` loaded!')
 
 var mobileMenu = document.querySelector('#mobile-menu'),
     mobileIcon = document.querySelector('#nav-icon3'),
@@ -22,3 +22,4 @@ function scrolling() {
     distanceToTop > distans ? header.classList.remove('dark') : header.classList.add('dark');
     
  }
+

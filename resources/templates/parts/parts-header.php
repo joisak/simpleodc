@@ -23,16 +23,23 @@ $isUserLoggedIn = is_user_logged_in();
 
             <div class="logo">
                 <a href="<?= home_url() ?>" class="img-fluid">
-                    <img class="white" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/simpledoc_grey_logo_inc-xspace.png" class="logo" alt="logo" />
-                    <img class="dark" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/simpledoc_blue_logo_inc-xspace.png" class="logo" alt="logo" />
+                    <img class="white" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/simpledoc_symbol.png" class="logo" alt="logo" />
+                    <img class="dark" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/simpledoc_symbol.png" class="logo" alt="logo" />
                 </a>
             </div>
 
             <div class="header-nav">
-                <?php echo do_shortcode('[google-translator]'); ?>
-                <?php echo esc_html(wp_nav_menu()); ?>
-                <a href=""> Logga in </a>
+                <div class="">
+                    <?php echo esc_html(wp_nav_menu()); ?>
+                </div>
+                <div>
+                    <a href=""><img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/user.svg" /> <span>Logga in</span> </a>
+                    <img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/world.svg" /> <?php echo do_shortcode('[google-translator]'); ?>
+                </div>
             </div>
+
+
+
             <div id="header-menu-icon">
                 <div id="nav-icon3">
                     <span></span>
@@ -46,8 +53,11 @@ $isUserLoggedIn = is_user_logged_in();
         </div>
     </div>
     <div id="mobile-menu">
-        <?php echo esc_html(wp_nav_menu()); ?>
-        <a href=""> Logga in </a>
+        <div class="menu"><?php echo esc_html(wp_nav_menu()); ?></div>
+        <div class="bottom-menu">
+            <a href=""><img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/user.svg" /> <span>Logga in</span> </a>
+            <img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/world.svg" /> <?php echo do_shortcode('[google-translator]'); ?>
+        </div>
     </div>
 
 
