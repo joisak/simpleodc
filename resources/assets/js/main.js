@@ -5,9 +5,18 @@ var mobileMenu = document.querySelector('#mobile-menu'),
     header = document.querySelector('#header');
 
 mobileIcon.addEventListener('click', function(){
-    this.classList.toggle('open');
-    console.log('log');
-    mobileMenu.classList.toggle('show');
+    // this.classList.toggle('open');
+    // console.log('log');
+    // if(mobileMenu.classList.contains('show')) {
+        
+    // } else {
+    //     console.log('no');
+    // }
+    // mobileMenu.classList.toggle('show');
+    if(mobileMenu.className == "hide")
+        mobileMenu.className = "show";
+    else
+        mobileMenu.className = "hide";
 })
 
 

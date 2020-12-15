@@ -52,7 +52,7 @@ $isUserLoggedIn = is_user_logged_in();
 
         </div>
     </div>
-    <div id="mobile-menu">
+    <div id="mobile-menu" class="hide">
         <div class="menu"><?php echo esc_html(wp_nav_menu()); ?></div>
         <div class="bottom-menu">
             <a href="https://simpledoc.online/"><img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/user.svg" /> <span>Logga in</span> </a>

@@ -3,9 +3,9 @@
 
 .button {
     padding: rem(16px) rem(40px) !important;
-    border: rem(1px) solid #ff441d !important;
+    border: rem(1px) solid #009fc4 !important;
     border-radius: 6px;
-    background-color: #ff441d !important;
+    background-color: #009fc4 !important;
     color: white;
     font-weight: 600 !important;
     text-decoration: none;
@@ -21,6 +21,6 @@
     }
     &:hover {
         color: white !important;
-        background-color: #e24121 !important;
+        background-color:#0288a7  !important;
     }
 }
