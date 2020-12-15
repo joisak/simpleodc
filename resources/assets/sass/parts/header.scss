@@ -62,7 +62,7 @@ header {
       display: flex;
     }
     @include lg {
-      font-size: rem(24px);
+      font-size: rem(20px);
     }
     .header-icon {
       height: rem(30);
@@ -105,9 +105,9 @@ header {
   position: relative;
   top: 0px;
   right: 0;
-  width: rem(80) !important;
+  width: rem(70) !important;
   display: inline-block;
-  height: rem(23);
+  height: rem(20);
   .flag {
     background: none;
     &.sv, &.en {
@@ -146,7 +146,7 @@ header {
         width: 5px;
         height: 10px;
         position: relative;
-        left: 30px;
+        left: rem(25);
         line-height: initial;
         top: 0px;
       }
