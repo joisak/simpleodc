@@ -18,7 +18,7 @@
 			</div>
 			<div class="col-12 col-md-4 order-3 order-md-2 text-center"></div>
 			<div class="col-12 col-md-4 py-4 py-md-auto text-center order-2 order-md-3 text-md-right">
-				<a href="">
+				<a href="https://www.linkedin.com/company/simpledoc/">
 					<div class="linked-in-logo">
 						<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'>
 							<title>Logo Linkedin</title>

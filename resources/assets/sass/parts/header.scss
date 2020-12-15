@@ -91,14 +91,15 @@ header {
     
       .current-menu-item {
         a {
-          border-bottom: 3px solid #009fc4 ;
-        }
+          border-bottom: 3px solid #009fc4;
+          color: #009fc4;        }
       }
       a {
-        transition: 0.2s ease all;
+        transition: 0.1s ease all;
         border-bottom: 3px solid transparent;
         &:hover {
           border-bottom: 3px solid #009fc4 ;
+          color: #009fc4;
         }
       }
     
