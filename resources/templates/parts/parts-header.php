@@ -33,7 +33,7 @@ $isUserLoggedIn = is_user_logged_in();
                     <?php echo esc_html(wp_nav_menu()); ?>
                 </div>
                 <div>
-                    <a href=""><img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/user.svg" /> <span>Logga in</span> </a>
+                    <a href="https://simpledoc.online/"><img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/user.svg" /> <span>Logga in</span> </a>
                     <img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/world.svg" /> <?php echo do_shortcode('[google-translator]'); ?>
                 </div>
             </div>
@@ -55,7 +55,7 @@ $isUserLoggedIn = is_user_logged_in();
     <div id="mobile-menu">
         <div class="menu"><?php echo esc_html(wp_nav_menu()); ?></div>
         <div class="bottom-menu">
-            <a href=""><img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/user.svg" /> <span>Logga in</span> </a>
+            <a href="https://simpledoc.online/"><img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/user.svg" /> <span>Logga in</span> </a>
             <img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/world.svg" /> <?php echo do_shortcode('[google-translator]'); ?>
         </div>
     </div>
