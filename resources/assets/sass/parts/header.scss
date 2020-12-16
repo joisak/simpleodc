@@ -44,7 +44,7 @@ header {
       display: none;
     }
     img {
-      height: rem(60);
+      height: rem(50);
     }
   }
   
@@ -54,7 +54,7 @@ header {
     letter-spacing: 0.005em;
     line-height: 0;
     display: none;
-    padding: 1.5rem 0;
+    padding: 0 0;
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -65,11 +65,15 @@ header {
     @include lg {
       font-size: rem(20px);
     }
+    .right-header-nav {
+      border-bottom: 3px solid transparent;
+    }
     .header-icon {
-      height: rem(30);
+      height: rem(24);
       padding-left: rem(32);
       position: relative;
-      top: -3px;
+      top: -2px;
+      left: -2px;
     }
     a {
       color: #353535;
@@ -91,15 +95,15 @@ header {
     
       .current-menu-item {
         a {
-          border-bottom: 3px solid #009fc4;
-          color: #009fc4;        }
+          border-bottom: 3px solid $brand-blue;
+          color: $brand-blue;        }
       }
       a {
         transition: 0.1s ease all;
         border-bottom: 3px solid transparent;
         &:hover {
-          border-bottom: 3px solid #009fc4 ;
-          color: #009fc4;
+          border-bottom: 3px solid $brand-blue ;
+          color: $brand-blue;
         }
       }
     
@@ -123,7 +127,7 @@ header {
 
 #flags {
   position: relative;
-  top: 0px;
+  top: 1px;
   right: 0;
   width: rem(70) !important;
   display: inline-block;
@@ -173,14 +177,6 @@ header {
     }
   }
 }
-
-
-
-
-
-
-
-
 
 #mobile-menu {
   .bottom-menu {
@@ -242,9 +238,7 @@ header {
       }
     }
   }
-  
 }
-
 
 #mobile-menu {
   text-align: center;
@@ -284,9 +278,7 @@ header {
   &.show {
     right: 0;
   }
-
 }
-
 
 #nav-icon3 span:nth-child(1) {
   top: rem(0px);
@@ -360,4 +352,3 @@ header {
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-

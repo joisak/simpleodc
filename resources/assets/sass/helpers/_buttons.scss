@@ -1,11 +1,12 @@
 @import './mixins';
 @import './breakpoints';
+@import './colors';
 
 .button {
-    padding: rem(16px) rem(40px) !important;
-    border: rem(1px) solid #009fc4 !important;
+    padding: rem(16px) rem(24) !important;
+    border: rem(1px) solid $brand-blue !important;
     border-radius: 6px;
-    background-color: #009fc4 !important;
+    background-color: $brand-blue !important;
     color: white;
     font-weight: 600 !important;
     text-decoration: none;

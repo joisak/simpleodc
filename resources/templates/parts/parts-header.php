@@ -32,7 +32,7 @@ $isUserLoggedIn = is_user_logged_in();
                 <div class="">
                     <?php echo esc_html(wp_nav_menu()); ?>
                 </div>
-                <div>
+                <div class="right-header-nav">
                     <a href="https://simpledoc.online/"><img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/user.svg" /> <span>Logga in</span> </a>
                     <img class="header-icon" src="<?php echo esc_html(get_template_directory_uri()); ?>/public/images/world.svg" /> <?php echo do_shortcode('[google-translator]'); ?>
                 </div>

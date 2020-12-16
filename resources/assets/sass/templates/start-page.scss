@@ -6,9 +6,9 @@
         height: 90vh;
         @include md {
             &.user-is-logged-in {
-                height: calc(100vh - 193px);
+                height: calc(100vh - 133px);
             }
-            height: calc(100vh - 60px);
+            height: calc(100vh - 0px);
             
         }
         h1 {

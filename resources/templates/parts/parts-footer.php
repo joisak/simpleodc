@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="row d-flex align-items-center py-4">
 			<div class="col-12 text-center text-md-left col-md-4 address">
-				<h5>Simpledoc</h5>
+				<h5>Simpledoc AB</h5>
 				<p>Kungsportsplatsen 1</p>
 				<p>411 10 Göteborg Sverige</p>
 				<p><a href="mailto:info@simpledoc.com">info@simpledoc.com </a></p>

@@ -1,4 +1,5 @@
  @import url('https://use.typekit.net/idp2yoy.css');
+ @import './helpers/mixins';
 
 html {
     //wordpress adds height 100% in html tag
@@ -14,6 +15,7 @@ body {
 main {
     background-color: white;
     //min-height: calc(100vh - 144px);
+    padding-bottom: rem(80);
 }
 
 //Typography
