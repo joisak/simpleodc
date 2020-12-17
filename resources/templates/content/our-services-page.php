@@ -4,6 +4,11 @@
     $middle_segment = get_field('middle_segment');
     $our_products_presentation_text = get_field('presentation_text');
     $our_products = get_field('our_products');
+    $background_image = get_field('background_image');
+    $click_to_action_button_text = get_field('call_to_action_button');
+    $feat_image = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+    $call_to_action_url = get_field('click_to_action_url');
+    $hero_size = get_field('hero_size');
 ?>
 
 
@@ -11,17 +16,25 @@
 <div class="<?php if ($isUserLoggedIn) {
                 echo 'user-is-logged-in';
             } ?> ">
-          
-            <div class="container">
-                <div class="our-services">
-                    <div class="row">
-                        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3  text-center">
-                        <?= the_content()?>    
-                        </div>
+    <div class="hero-container" style="background-image:url('<?= $background_image ?>')"> 
+        <div class="container">
+            <div class="hero row align-items-center text-center <? if($hero_size) echo 'half-size'?>">
+                <div class="col-md-8  col-lg-6 offset-lg-3">
+                    <div class="text">
+                        <?php if (the_content()) : ?>
+                            <? echo the_content() ?>
+                        <?php endif ?>
                     </div>
+                    <?php if ($click_to_action_button_text) : ?>
+                        <div class="buttons">
+                            <a class="button big cla-button" href="<?= $call_to_action_url ?>"><?= $click_to_action_button_text ?></a>
+                        </div>
+                    <?php endif ?>
                 </div>
-
             </div>
+        </div>
+    </div>
+
     <div class="container">
 
         <div class="our-products">

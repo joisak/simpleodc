@@ -2,53 +2,6 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    .hero {
-        height: 90vh;
-        @include md {
-            &.user-is-logged-in {
-                height: calc(100vh - 133px);
-            }
-            height: calc(100vh - 0px);
-            
-        }
-        h1 {
-            line-height: 4.5rem;
-            font-weight: 800;
-            padding-bottom: 1.5rem;
-            font-size: rem(40);
-            line-height: rem(44);
-            padding-bottom: 0;
-            margin-bottom: 0;
-            @include md {
-                font-size: rem(60);
-                line-height: rem(70);
-            }
-            span {
-                color: rgb(0, 180, 228);
-            }
-        }
-        p {
-            margin-top: rem(20);
-            font-size: rem(24);
-            font-weight: 500;
-            //color:rgb(107, 114, 128);
-        }
-        .text {
-            margin-bottom: rem(40);
-        }
-        img {
-            display: none;
-            @include md {
-                display: block;
-                width: 60%;
-                margin: auto;
-            }
-            @include lg {
-                margin-top: auto;
-                width: auto;
-            }
-        }
-    }
     .information {
         padding-top: rem(60);
         padding-bottom: rem(40);
