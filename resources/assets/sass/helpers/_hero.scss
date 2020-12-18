@@ -5,7 +5,7 @@
         &.user-is-logged-in {
             height: calc(100vh - 133px);
         }
-        height: calc(100vh - 0px);
+        height: calc(100vh - 80px);
     }
     &.half-size {
 
@@ -26,6 +26,7 @@
         }
         span {
             color: rgb(0, 180, 228);
+            text-shadow: 1px 1px 11px rgba(252,252,252,0.8);
         }
     }
     p {

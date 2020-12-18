@@ -22,3 +22,35 @@
         margin: 0;
     }
 }
+
+.products-row {
+    margin: 0 auto !important;
+
+}
+
+.container-0 {
+    background-color: $brand-orange-alfa;
+    .icon-full svg {
+        color: $brand-orange;
+    }
+}
+.container-1 {
+
+
+    background-color: $brand-blue-dark-alfa;
+    .icon-full svg {
+        color: $brand-blue-dark;
+    }
+}
+.container-2 {
+    background-color: $brand-purple-alfa;
+    .icon-full svg {
+        color: $brand-purple;
+    }
+}
+.container-3 {
+    background-color: $brand-green-alfa;
+    .icon-full svg {
+        color: $brand-green;
+    }   
+}

@@ -39,18 +39,13 @@ $information = get_field('information');
 
 
             </div>
+            <div class="information">
     <div class="container">
-        <div id="demo-form">
-            <?php if($page === 'boka-demo') : ?> 
-                <?php echo do_shortcode("[formidable id=1 title=true description=true]"); ?>
-            <?php endif ?>
-        </div>
-
-        <div class="information">
+      
                 <?php if($information) : ?>
                 <?php $index = 0 ?>
                 <?php foreach($information as $case) : ?>
-                    <div class="row d-flex align-items-center py-3 py-md-5">
+                    <div class="row d-flex align-items-center my-3 my-md-5">
                         
                         <div class="<?php if($index % 2 !== 0) { echo 'order-md-last'; }  ?> col-md-6">
                             <h2><?= $case['header']?></h2>
